@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: bai
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes: #路由  分配对应的服务消费者
+    eat: #名称自定义 标记的服务的名称
+      path: /eat/**   #外界访问的名称
+      serviceId: HelloConsuner  #服务的名称 一般是指服务消费者的名称
+    user:
+      path: /user/**
+      serviceId: HelloProvider
+#    goods:
+#      path: /goods/**
+#      serviceId: xxx
+#    order:
+#      path: /order/**
+#      serviceId: xxx
+#    pay:
+#      path: /pay/**
+#      serviceId: xxx

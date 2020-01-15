@@ -1,0 +1,11 @@
+server:
+  port: 8802
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: HelloConsuner
+  main:
+    allow-bean-definition-overriding: true  #允许实现多个服务者

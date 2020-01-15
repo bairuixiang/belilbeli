@@ -1,0 +1,18 @@
+
+server:
+  port: 8801
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: HelloProvider
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_eat?serverTimezone=UTC
+    username: root
+    password: 19990303bai
+    type: com.alibaba.druid.pool.DruidDataSource
