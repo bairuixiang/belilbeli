@@ -9,10 +9,9 @@ spring:
   application:
     name: HelloProvider
 
-
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_eat?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/belibeli?serverTimezone=UTC
     username: root
     password: 19990303bai
     type: com.alibaba.druid.pool.DruidDataSource

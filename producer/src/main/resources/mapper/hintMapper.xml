@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feri.car.user.dao.hintMapper">
+  <resultMap id="BaseResultMap" type="com.bai.Hint">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="sender_id" jdbcType="INTEGER" property="senderId" />
+    <result column="video_id" jdbcType="INTEGER" property="videoId" />
+    <result column="receiver_id" jdbcType="INTEGER" property="receiverId" />
+    <result column="hint_id" jdbcType="INTEGER" property="hintId" />
+    <result column="hint" jdbcType="VARCHAR" property="hint" />
+    <result column="ctime" jdbcType="TIMESTAMP" property="ctime" />
+    <result column="likenum" jdbcType="INTEGER" property="likenum" />
+  </resultMap>
+
+</mapper>

@@ -7,6 +7,7 @@
         <module>producer</module>
         <module>consuner</module>
         <module>gateway</module>
+        <module>pojo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
